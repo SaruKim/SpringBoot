@@ -13,6 +13,7 @@ public class MvcConfig implements WebMvcConfigurer {
 	public MyInterceptor myInterceptor() {
 		System.out.println("我修改了");
 		System.out.println("hello git4!");
+		System.out.println("push test");
 		return new MyInterceptor();
 	}
 

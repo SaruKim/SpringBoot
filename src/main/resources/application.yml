@@ -1,0 +1,35 @@
+jdbc:
+  driverClassName: com.mysql.jdbc.Driver
+  url: jdbc:mysql://127.0.0.1:3306/students
+  username: root
+  password: root
+
+
+spring:
+  profiles:
+    active: abc,def
+  mvc:
+    view:
+      prefix: /WEB-INF/
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/students
+    username: root
+    password: root
+
+server:
+  port: 80
+
+#日志记录级别
+logging:
+  level:
+    test.lxl: debug
+    org.springframework: info
+
+mybatis:
+  # 实体类别名包路径
+  type-aliases-package: test.lxl.pojo
+  # 映射文件路径
+  # mapper-locations: classpath:mappers/*.xml
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

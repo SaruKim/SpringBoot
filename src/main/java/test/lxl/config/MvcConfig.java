@@ -11,6 +11,7 @@ public class MvcConfig implements WebMvcConfigurer {
 	//注册拦截器
 	@Bean
 	public MyInterceptor myInterceptor() {
+		System.out.println("hello git4!");
 		return new MyInterceptor();
 	}
 

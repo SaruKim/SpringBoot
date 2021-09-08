@@ -15,6 +15,7 @@ import tk.mybatis.spring.annotation.MapperScan;
 @MapperScan("test.lxl.mapper")
 public class Application {
 	public static void main(String[] args) {
+		System.out.println("GitHub test");
 		SpringApplication.run(Application.class,args);
 	}
 }
